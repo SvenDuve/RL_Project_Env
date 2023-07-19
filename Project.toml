@@ -1,0 +1,11 @@
+[deps]
+Conda = "8f4d0f93-b110-5947-807f-2305c1781a2d"
+DDPG = "8ec6dd78-eb7a-4e52-aead-a0b68381319b"
+DQN = "deb474df-0289-44c2-842d-684d3ab7ddf3"
+MBRL = "5b59a703-f9a9-4862-ac00-36bfaa260143"
+NNDynamics = "53ea632b-59b7-4298-9872-46979de5c8eb"
+NODEDynamics = "57723ca8-2715-4bf2-a8d0-05a37925b76f"
+ODERNNDynamics = "8bc7aede-b6b4-4d91-81c5-ce89a4bda3d5"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+RLTypes = "caff8df6-c124-4ea5-aa40-27805766b7ca"
+Rewards = "ada35a54-ba6b-4adf-9b5b-9f5477ac8350"
