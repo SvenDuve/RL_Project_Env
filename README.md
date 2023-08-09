@@ -15,7 +15,7 @@ git clone https://github.com/SvenDuve/RL_Project_Env.git
 Start Julia and navigate to the project directory.
 
 ```julia
-cd("path/to/project")
+cd("path/to/RL_Project_Env")
 ``` 
 
 You can check the Julia REPL is in the correct folder by running ```pwd()```.
