@@ -14,7 +14,7 @@ git clone https://github.com/SvenDuve/RL_Project_Env.git
 
 Start Julia and navigate to the project directory.
 
-````julia
+```julia
 cd("path/to/project")
 ``` 
 
