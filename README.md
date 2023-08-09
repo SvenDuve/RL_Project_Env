@@ -41,4 +41,8 @@ Conda.pip_interop(true)
 Conda.pip("install", "git+https://github.com/SvenDuve/Gymnasium")
 ```
 
-We now set up a virtual environment for the julia package:
+We are now rewady to run the demos:
+
+```julia
+include("demo_DDPG.jl")
+```
