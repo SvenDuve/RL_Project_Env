@@ -10,9 +10,17 @@ Clone this project to your local machine.
 
 ```
 git clone https://github.com/SvenDuve/RL_Project_Env.git
-````
+```
 
-```cd``` into the project directory and start julia, then
+Start Julia and navigate to the project directory.
+
+````julia
+cd("path/to/project")
+``` 
+
+You can check the Julia REPL is in the correct folder by running ```pwd()```.
+
+Once you are in ```~/RL_Project_Env"``` activate the project environment and install the required packages in the Julia REPL running the following commands:
 
 ```julia
 using Pkg
@@ -20,17 +28,16 @@ Pkg.activate(".")
 Pkg.instantiate()
 ```
 
-```julia
-using Pkg
-Pkg.add("Conda")
-Pkg.add("PyCall")
-```
+This will take several minutes to complete, nevertheless, you should see constant actvitity or a progress bar in the REPL.
 
-Then install the required python packages by running the following commands in the julia REPL:
+## Gymnasium
+
+Then install the required python packages for the Gymnasium Environment by running the following commands in the Julia REPL:
 
 ```julia
 using Conda
 using PyCall
+Conda.pip_interop(true)
 Conda.pip("install", "git+https://github.com/SvenDuve/Gymnasium")
 ```
 
