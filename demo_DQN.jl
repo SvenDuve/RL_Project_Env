@@ -1,11 +1,11 @@
 println("Loading Packges...")
 
-using DQN
+import DQN
 using RLTypes
 
 println("Training Agent for 500 Episodes, please wait...")
 
-aP = agent(LunarLanderDiscrete(), AgentParameter(training_episodes=500))
+aP = DQN.agent(LunarLanderDiscrete(), AgentParameter(training_episodes=500))
 
 
 # println("Training Complete, now testing for 10 Episodes...")
