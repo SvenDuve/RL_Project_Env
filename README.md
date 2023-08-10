@@ -43,11 +43,28 @@ Conda.pip("install", "git+https://github.com/SvenDuve/Gymnasium")
 
 We are now rewady to run the demos:
 
+Model Free:
+
+## Pendulum:
+
 ```julia
 include("demo_DDPG.jl") # shows the solve of a Pendulum Environment
 ```
 
+## Lunar Lander
+
 ```julia 
-include("demo_DQN.jl) # solve the discrete Lunar Lander Environment
+include("demo_DQN.jl") # solve the discrete Lunar Lander Environment
 ```
 
+## Model Learning
+
+```julia
+include("demo_Model_Learning.jl") # shows the solve of a Pendulum Environment
+```
+
+## Model Based
+
+```julia
+include("demo_Model_Based.jl") # shows the solve of a Pendulum Environment
+```
