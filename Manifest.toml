@@ -262,7 +262,7 @@ version = "1.0.0-DEV"
 
 [[deps.DQN]]
 deps = ["Conda", "Distributions", "Flux", "MLUtils", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "Statistics", "UnPack"]
-git-tree-sha1 = "4801ae6478148c310971549df5e272a57b2400db"
+git-tree-sha1 = "93a5a9a033808360470c421a2631286dc208f5f9"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/DQN.jl"
 uuid = "deb474df-0289-44c2-842d-684d3ab7ddf3"
