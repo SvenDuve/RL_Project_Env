@@ -1,21 +1,31 @@
 # Project Environment
 
-## Installation
+We expect a running installation of git for this project. All Julia repos have been tested on 64-bit architectures of each of Windows, MacOS and Linux. Installation of Julia and the neccessary repos from either Windows or MacOS should be straightforward. For Linux we recommend to install Julia from the command line, see below.
+
+## Julia Installation
 
 Download julia 1.9.2 from here: https://julialang.org/downloads/
 
-Then ideally add the julia executable to your path by following these instructions: https://julialang.org/downloads/platform/
+After installation, Julia can be started from by clicking the Julia icon from your applications folder. If you want to rund julia from the command line, which is not neccessary, you can add the julia executable to your path by following these instructions: https://julialang.org/downloads/platform/
 
-Clone this project to your local machine.
+**For active Julia users**: If this is not the first installation of Julia on your machine, make sure that the new installation satisfies any requirements of your ```startup.jl``` file in case you have one. 
+
+Once you are happy with your Julia installation, we can move on to cloning the project to your machine.
+
+## Clone this project to your local machine.
+
+In your root folder, open a terminal and run the following command:
 
 ```
 git clone https://github.com/SvenDuve/RL_Project_Env.git
 ```
 
-Start Julia and navigate to the project directory.
+This will create a folder ```RL_Project_Env``` in your users directory. This folder contains the Julia project environment we will be using for this project.
+
+Start Julia and ```cd``` into the project directory.
 
 ```julia
-cd("path/to/RL_Project_Env")
+julia> cd("~/RL_Project_Env")
 ``` 
 
 You can check the Julia REPL is in the correct folder by running ```pwd()```.
@@ -28,23 +38,22 @@ Pkg.activate(".")
 Pkg.instantiate()
 ```
 
+We loaded the package manager, activated the project environment and installed the required packages from the ```Project.toml``` file.
+
 This will take several minutes to complete, nevertheless, you should see constant actvitity or a progress bar in the REPL.
+
+We next require a running installation of the Gymnasium framework.  
 
 ## Gymnasium
 
-Then install the required python packages for the Gymnasium Environment by running the following commands in the Julia REPL:
+Running the following script will clone the Gymnasium framework and neccessary other python packages to your local machine and install within an encapsulated python installation under Julia´s Conda Package.
+
 
 ```julia
-using Conda
-using PyCall
-Conda.pip_interop(true)
-Conda.pip("install", "git+https://github.com/SvenDuve/Gymnasium")
-Conda.add("wheel")
-Conda.add("box2d-py")
-Conda.add("pygame")
+julia> include("build_Gymnasium.jl)
 ```
 
-We are now rewady to run the demos:
+We are now ready to run some demos:
 
 Model Free:
 
