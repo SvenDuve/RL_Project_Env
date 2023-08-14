@@ -1,6 +1,6 @@
 # Project Environment
 
-We expect a running installation of [git](https://git-scm.com/downloads) for this project as well as access to [GitHub](https://github.com). All Julia repos have been tested on 64-bit architectures of each of Windows, MacOS and Linux. Installation of Julia and the neccessary repos from either Windows or MacOS should be straightforward. For Linux we recommend to install Julia from the command line, see below.
+We expect a running installation of [git](https://git-scm.com/downloads) for this project as well as access to [GitHub](https://github.com). All Julia repos have successfully been tested on 64-bit architectures of each of Windows, MacOS and Linux by GitHub Actions. Installation of Julia and the neccessary repos from either Windows or MacOS should be straightforward. For Linux we recommend to install Julia from the command line, see below. If you have a running installation of Julia on your machine, you can skip the Julia installation step and move on to cloning the project to your machine.
 
 ## Julia Installation
 
@@ -25,12 +25,12 @@ This will create a folder ```RL_Project_Env``` in your users directory. This fol
 Start Julia and ```cd``` into the project directory:
 
 ```julia
-julia> cd("~/RL_Project_Env")
+julia> cd("./RL_Project_Env")
 ``` 
 
 You can check in the Julia REPL if you are in the correct folder by running ```pwd()```.
 
-Once you are in ```~/RL_Project_Env"``` activate the project environment and install the required packages in the Julia REPL running the following commands:
+Once you are in ```/RL_Project_Env"``` activate the project environment and install the required packages in the Julia REPL running the following commands:
 
 ```julia
 julia> using Pkg
@@ -48,7 +48,7 @@ Running the following script will clone the Gymnasium framework and neccessary o
 
 
 ```julia
-julia> include("build_Gymnasium.jl)
+julia> include("build_Gymnasium.jl")
 ```
 
 We are now ready to run some demos:
