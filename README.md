@@ -24,7 +24,7 @@ This will create a folder ```RL_Project_Env``` in your users directory. This fol
 
 Start Julia and ```cd``` into the project directory:
 
-```julia
+```
 julia> cd("./RL_Project_Env")
 ``` 
 
@@ -32,7 +32,7 @@ You can check in the Julia REPL if you are in the correct folder by running ```p
 
 Once you are in ```/RL_Project_Env"``` activate the project environment and install the required packages in the Julia REPL running the following commands:
 
-```julia
+```
 julia> using Pkg
 julia> Pkg.activate(".")
 julia> Pkg.instantiate()
@@ -47,7 +47,7 @@ We next require a running installation of the Gymnasium framework.
 Running the following script will clone the Gymnasium framework and neccessary other python packages to your local machine and install within an encapsulated python installation under Julia´s Conda Package.
 
 
-```julia
+```
 julia> include("build_Gymnasium.jl")
 ```
 
@@ -57,24 +57,24 @@ Model Free:
 
 ## Pendulum:
 
-```julia
+```
 julia> include("demo_DDPG.jl") # shows the solve of a Pendulum Environment
 ```
 
 ## Lunar Lander
 
-```julia 
+``` 
 julia> include("demo_DQN.jl") # solve the discrete Lunar Lander Environment
 ```
 
 ## Model Learning
 
-```julia
+```
 julia> include("demo_Model_Learning.jl") # shows the solve of a Pendulum Environment
 ```
 
 ## Model Based
 
-```julia
+```
 julia> include("demo_Model_Based.jl") # shows the solve of a Pendulum Environment
 ```
