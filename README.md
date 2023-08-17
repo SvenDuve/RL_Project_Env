@@ -64,17 +64,17 @@ julia> include("demo_DDPG.jl") # shows the solve of a Pendulum Environment
 ## Lunar Lander
 
 ``` 
-julia> include("demo_DQN.jl") # solve the discrete Lunar Lander Environment
+julia> include("demo_DQN.jl") # solves the discrete Lunar Lander Environment
 ```
 
 ## Model Learning
 
 ```
-julia> include("demo_Model_Learning.jl") # shows the solve of a Pendulum Environment
+julia> include("demo_NODELearning.jl") # shows the training of a model
 ```
 
 ## Model Based
 
 ```
-julia> include("demo_Model_Based.jl") # shows the solve of a Pendulum Environment
+julia> include("demo_MBRL.jl") # shows the solve of a Pendulum Environment
 ```

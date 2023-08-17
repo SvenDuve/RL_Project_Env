@@ -95,9 +95,9 @@ version = "0.3.7"
 
 [[deps.BandedMatrices]]
 deps = ["ArrayLayouts", "FillArrays", "LinearAlgebra", "PrecompileTools"]
-git-tree-sha1 = "6e9b384d5e21452bc81cae3552c74f430e320985"
+git-tree-sha1 = "106122bad983acd8e21aef3f7a7f91a3ac739077"
 uuid = "aae01518-5342-5314-be14-df237901396f"
-version = "0.17.35"
+version = "0.17.36"
 weakdeps = ["SparseArrays"]
 
     [deps.BandedMatrices.extensions]
@@ -138,10 +138,10 @@ uuid = "62783981-4cbd-42fc-bca8-16325de8dc4b"
 version = "0.1.5"
 
 [[deps.BoundaryValueDiffEq]]
-deps = ["BandedMatrices", "DiffEqBase", "FiniteDiff", "ForwardDiff", "LinearAlgebra", "NLsolve", "Reexport", "SciMLBase", "SparseArrays"]
-git-tree-sha1 = "ed8e837bfb3d1e3157022c9636ec1c722b637318"
+deps = ["BandedMatrices", "DiffEqBase", "FiniteDiff", "ForwardDiff", "LinearAlgebra", "NonlinearSolve", "Reexport", "SciMLBase", "Setfield", "SparseArrays", "TruncatedStacktraces"]
+git-tree-sha1 = "039775034259dfc1f106b195f69af7741f90ef10"
 uuid = "764a87c0-6b3e-53db-9096-fe964310641d"
-version = "2.11.0"
+version = "3.0.0"
 
 [[deps.CEnum]]
 git-tree-sha1 = "eb4cb44a499229b3b8426dcfb5dd85333951ff90"
@@ -254,7 +254,7 @@ version = "0.3.1"
 
 [[deps.DDPG]]
 deps = ["Conda", "Distributions", "Flux", "MLUtils", "Parameters", "PyCall", "RLTypes", "Statistics", "UnPack"]
-git-tree-sha1 = "947ac099414c2af3db94d47cbec850c93ca0f54b"
+git-tree-sha1 = "12a72cefe73dd527893589c76edafa40b4140e4b"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/DDPG.jl"
 uuid = "8ec6dd78-eb7a-4e52-aead-a0b68381319b"
@@ -262,7 +262,7 @@ version = "1.0.0-DEV"
 
 [[deps.DQN]]
 deps = ["Conda", "Distributions", "Flux", "MLUtils", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "Statistics", "UnPack"]
-git-tree-sha1 = "93a5a9a033808360470c421a2631286dc208f5f9"
+git-tree-sha1 = "118fcd3ddc46c432601db9c1558fed48cbfe7570"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/DQN.jl"
 uuid = "deb474df-0289-44c2-842d-684d3ab7ddf3"
@@ -364,9 +364,9 @@ version = "1.15.1"
 
 [[deps.DifferentialEquations]]
 deps = ["BoundaryValueDiffEq", "DelayDiffEq", "DiffEqBase", "DiffEqCallbacks", "DiffEqNoiseProcess", "JumpProcesses", "LinearAlgebra", "LinearSolve", "NonlinearSolve", "OrdinaryDiffEq", "Random", "RecursiveArrayTools", "Reexport", "SciMLBase", "SteadyStateDiffEq", "StochasticDiffEq", "Sundials"]
-git-tree-sha1 = "1cfe0178410e1bb4b14058c537d0f347eb9d95dc"
+git-tree-sha1 = "9b2fef0d520066196dbd6761bbc15da5e6282d9e"
 uuid = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
-version = "7.8.0"
+version = "7.9.0"
 
 [[deps.Distances]]
 deps = ["LinearAlgebra", "Statistics", "StatsAPI"]
@@ -425,10 +425,10 @@ uuid = "4e289a0a-7415-4d19-859d-a7e5c4648b56"
 version = "1.0.4"
 
 [[deps.Enzyme]]
-deps = ["CEnum", "EnzymeCore", "Enzyme_jll", "GPUCompiler", "LLVM", "Libdl", "LinearAlgebra", "ObjectFile", "Printf", "Random"]
-git-tree-sha1 = "5eb8de9b18c31683be5c7b5a5034aaf5e24dd068"
+deps = ["CEnum", "EnzymeCore", "Enzyme_jll", "GPUCompiler", "LLVM", "Libdl", "LinearAlgebra", "ObjectFile", "Preferences", "Printf", "Random"]
+git-tree-sha1 = "1f85bc8a9da6118abb95d134efc68cf4a6957341"
 uuid = "7da242da-08ed-463a-9acd-ee780be4f1d9"
-version = "0.11.6"
+version = "0.11.7"
 
 [[deps.EnzymeCore]]
 deps = ["Adapt"]
@@ -438,9 +438,9 @@ version = "0.5.2"
 
 [[deps.Enzyme_jll]]
 deps = ["Artifacts", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
-git-tree-sha1 = "dca536dc737737d14228b485bb46abeeecfa9695"
+git-tree-sha1 = "ffa4926cc857bcc5c256825bd7273a6ac989eb34"
 uuid = "7cc45869-7501-5eee-bdea-0790c847d4ef"
-version = "0.0.78+0"
+version = "0.0.80+0"
 
 [[deps.ExponentialUtilities]]
 deps = ["Adapt", "ArrayInterface", "GPUArraysCore", "GenericSchur", "LinearAlgebra", "Printf", "SnoopPrecompile", "SparseArrays", "libblastrampoline_jll"]
@@ -634,10 +634,10 @@ uuid = "82899510-4779-5014-852e-03e436cf321d"
 version = "1.0.0"
 
 [[deps.JLLWrappers]]
-deps = ["Preferences"]
-git-tree-sha1 = "abc9885a7ca2052a736a600f7fa66209f96506e1"
+deps = ["Artifacts", "Preferences"]
+git-tree-sha1 = "a7e91ef94114d5bc8952bcaa8d6ff952cf709808"
 uuid = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
-version = "1.4.1"
+version = "1.4.2"
 
 [[deps.JSON]]
 deps = ["Dates", "Mmap", "Parsers", "Unicode"]
@@ -799,7 +799,7 @@ weakdeps = ["ChainRulesCore", "ForwardDiff", "SpecialFunctions"]
 
 [[deps.MBRL]]
 deps = ["BSON", "Conda", "DDPG", "DQN", "Distributions", "Flux", "MLUtils", "NODEDynamics", "ODERNNDynamics", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "Rewards", "Statistics", "StatsBase", "UnPack"]
-git-tree-sha1 = "e429fa75034e272270e555ea0245770fca721310"
+git-tree-sha1 = "8128b23ba79e33f68684b077ac3924061b1ba918"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/MBRL.jl"
 uuid = "5b59a703-f9a9-4862-ac00-36bfaa260143"
@@ -874,7 +874,7 @@ version = "4.5.1"
 
 [[deps.NNDynamics]]
 deps = ["Conda", "Flux", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "SciMLSensitivity", "StatsBase", "Zygote"]
-git-tree-sha1 = "76536176827b7816a814c13c0f392900dac915db"
+git-tree-sha1 = "520e471d00ae573ae1c786e67415788425fa5129"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/NNDynamics.jl"
 uuid = "53ea632b-59b7-4298-9872-46979de5c8eb"
@@ -898,7 +898,7 @@ version = "0.9.4"
 
 [[deps.NODEDynamics]]
 deps = ["Conda", "DifferentialEquations", "Flux", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "SciMLSensitivity", "StatsBase", "Zygote"]
-git-tree-sha1 = "df215e2c4ee8e1d04aa29a8d99343d1ee9891d6a"
+git-tree-sha1 = "4e68d7b3e0fd84c0e0992d9f9fdf035428f9656a"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/NODEDynamics.jl"
 uuid = "57723ca8-2715-4bf2-a8d0-05a37925b76f"
@@ -928,7 +928,7 @@ version = "1.9.0"
 
 [[deps.ODERNNDynamics]]
 deps = ["Conda", "DifferentialEquations", "Flux", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "SciMLSensitivity", "StatsBase", "Zygote"]
-git-tree-sha1 = "cb0c18ea3dfa260b08d3500d1d1ab61c8a4fb41a"
+git-tree-sha1 = "e6e9e5ff2e67ccd390188ea0c3c851382feab422"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/ODERNNDynamics.jl"
 uuid = "8bc7aede-b6b4-4d91-81c5-ce89a4bda3d5"
@@ -970,9 +970,9 @@ version = "0.5.5+0"
 
 [[deps.Optim]]
 deps = ["Compat", "FillArrays", "ForwardDiff", "LineSearches", "LinearAlgebra", "NLSolversBase", "NaNMath", "Parameters", "PositiveFactorizations", "Printf", "SparseArrays", "StatsBase"]
-git-tree-sha1 = "e3a6546c1577bfd701771b477b794a52949e7594"
+git-tree-sha1 = "963b004d15216f8129f6c0f7d187efa136570be0"
 uuid = "429524aa-4258-5aef-a3af-852621145aeb"
-version = "1.7.6"
+version = "1.7.7"
 
 [[deps.Optimisers]]
 deps = ["ChainRulesCore", "Functors", "LinearAlgebra", "Random", "Statistics"]
@@ -987,9 +987,9 @@ version = "1.6.2"
 
 [[deps.OrdinaryDiffEq]]
 deps = ["ADTypes", "Adapt", "ArrayInterface", "DataStructures", "DiffEqBase", "DocStringExtensions", "ExponentialUtilities", "FastBroadcast", "FastClosures", "FiniteDiff", "ForwardDiff", "FunctionWrappersWrappers", "IfElse", "InteractiveUtils", "LineSearches", "LinearAlgebra", "LinearSolve", "Logging", "LoopVectorization", "MacroTools", "MuladdMacro", "NLsolve", "NonlinearSolve", "Polyester", "PreallocationTools", "PrecompileTools", "Preferences", "RecursiveArrayTools", "Reexport", "SciMLBase", "SciMLNLSolve", "SciMLOperators", "SimpleNonlinearSolve", "SimpleUnPack", "SparseArrays", "SparseDiffTools", "StaticArrayInterface", "StaticArrays", "TruncatedStacktraces"]
-git-tree-sha1 = "47c560dcb059570bdbd9f887a6b8958190e498a4"
+git-tree-sha1 = "2758190d4b01182e2278b772339daa83e209d45a"
 uuid = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
-version = "6.53.4"
+version = "6.54.0"
 
 [[deps.PDMats]]
 deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse"]
@@ -1099,7 +1099,7 @@ uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 
 [[deps.RLTypes]]
 deps = ["Parameters", "StatsBase"]
-git-tree-sha1 = "7bc4d19b2b8d7fc8685e32370659d179f286ae5d"
+git-tree-sha1 = "c425b02a844758f6fd91a449f3d13269b8382ab0"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/RLTypes.jl"
 uuid = "caff8df6-c124-4ea5-aa40-27805766b7ca"
@@ -1174,13 +1174,13 @@ version = "1.1.1"
 
 [[deps.ReverseDiff]]
 deps = ["ChainRulesCore", "DiffResults", "DiffRules", "ForwardDiff", "FunctionWrappers", "LinearAlgebra", "LogExpFunctions", "MacroTools", "NaNMath", "Random", "SpecialFunctions", "StaticArrays", "Statistics"]
-git-tree-sha1 = "18ed404e60753972ffd459c0db9725ff34d6e60d"
+git-tree-sha1 = "d1235bdd57a93bd7504225b792b867e9a7df38d5"
 uuid = "37e2e3b7-166d-5795-8a7a-e32c996b4267"
-version = "1.15.0"
+version = "1.15.1"
 
 [[deps.Rewards]]
 deps = ["RLTypes"]
-git-tree-sha1 = "523e047ec3f7dd9bf46e7032d34859191f42f8bb"
+git-tree-sha1 = "68ae497b2d594eec77db8f6eac2d597fab3a3474"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/Rewards.jl"
 uuid = "ada35a54-ba6b-4adf-9b5b-9f5477ac8350"
