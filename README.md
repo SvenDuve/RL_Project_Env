@@ -64,7 +64,7 @@ Environment:
   JULIA_IMAGE_THREADS = 1
 ```
 
-You just have created an encapsulated virtual environment for this project. Once this is not required anymore it can be conventiently deleted.
+You just have created an encapsulated virtual environment for this project. Once this is not required anymore it can be conveniently deleted.
 
 ## Gymnasium
 

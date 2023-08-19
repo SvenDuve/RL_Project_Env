@@ -254,7 +254,7 @@ version = "0.3.1"
 
 [[deps.DDPG]]
 deps = ["Conda", "Distributions", "Flux", "MLUtils", "Parameters", "PyCall", "RLTypes", "Statistics", "UnPack"]
-git-tree-sha1 = "9a7323ed8c5f072eed22b89c1cd65474b997549e"
+git-tree-sha1 = "bb3ab75c772b989a8ffbc479cb7fa1ea9872f966"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/DDPG.jl"
 uuid = "8ec6dd78-eb7a-4e52-aead-a0b68381319b"
@@ -262,7 +262,7 @@ version = "1.0.0-DEV"
 
 [[deps.DQN]]
 deps = ["Conda", "Distributions", "Flux", "MLUtils", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "Statistics", "UnPack"]
-git-tree-sha1 = "f734422dbe96647a9658e19df08829b7c8029c37"
+git-tree-sha1 = "61c78f2916b9261c112a8bb2cd913a5a6637b00b"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/DQN.jl"
 uuid = "deb474df-0289-44c2-842d-684d3ab7ddf3"
@@ -799,7 +799,7 @@ weakdeps = ["ChainRulesCore", "ForwardDiff", "SpecialFunctions"]
 
 [[deps.MBRL]]
 deps = ["BSON", "Conda", "DDPG", "DQN", "Distributions", "Flux", "MLUtils", "NODEDynamics", "ODERNNDynamics", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "Rewards", "Statistics", "StatsBase", "UnPack"]
-git-tree-sha1 = "afeda9c405e1656d4a279e63be75c276b4b51ec3"
+git-tree-sha1 = "3c221b6780015f711183808a1c05a5848a218784"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/MBRL.jl"
 uuid = "5b59a703-f9a9-4862-ac00-36bfaa260143"
@@ -874,7 +874,7 @@ version = "4.5.1"
 
 [[deps.NNDynamics]]
 deps = ["Conda", "Flux", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "SciMLSensitivity", "StatsBase", "Zygote"]
-git-tree-sha1 = "7ecf7031988dd74bbf4271bb56a15b181ed3b0b1"
+git-tree-sha1 = "12bc896e872362c4f9376cd0afe9faffbd89767c"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/NNDynamics.jl"
 uuid = "53ea632b-59b7-4298-9872-46979de5c8eb"
@@ -898,7 +898,7 @@ version = "0.9.4"
 
 [[deps.NODEDynamics]]
 deps = ["Conda", "DifferentialEquations", "Flux", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "SciMLSensitivity", "StatsBase", "Zygote"]
-git-tree-sha1 = "6a2c2f3a7164ad2238e31aede3efeb16f48f7aa3"
+git-tree-sha1 = "2001c3d76f906b3e8d61172a10081bd6f69a95ec"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/NODEDynamics.jl"
 uuid = "57723ca8-2715-4bf2-a8d0-05a37925b76f"
@@ -928,7 +928,7 @@ version = "1.9.0"
 
 [[deps.ODERNNDynamics]]
 deps = ["Conda", "DifferentialEquations", "Flux", "OneHotArrays", "Parameters", "PyCall", "RLTypes", "SciMLSensitivity", "StatsBase", "Zygote"]
-git-tree-sha1 = "7b160e20d33ec043b9ff6196c12bb9e2d324b5f1"
+git-tree-sha1 = "917ccd5f90e695141533a7f88fbf609f6c068e8f"
 repo-rev = "main"
 repo-url = "https://github.com/SvenDuve/ODERNNDynamics.jl"
 uuid = "8bc7aede-b6b4-4d91-81c5-ce89a4bda3d5"
